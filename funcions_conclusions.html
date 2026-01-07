@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exercici 16_03. Matricules italianes &mdash; Introducció a la programació amb Java 2025-26 documentació</title>
+  <title>Repàs sobre funcions i procediments &mdash; Introducció a la programació amb Java 2025-26 documentació</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=eafc0fe6" />
@@ -26,8 +26,8 @@
     <link rel="author" title="Quant a aquests documents" href="about.html" />
     <link rel="index" title="Índex" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
-    <link rel="next" title="Exercici 16_04. Tipus de mòduls" href="exercici_16_04_tipus_moduls.html" />
-    <link rel="prev" title="Exercici 16_02. Compta vocals" href="exercici_16_02_compta_vocals.html" />
+    <link rel="next" title="Llista d&#39;exercicis" href="moduls_exercicis.html" />
+    <link rel="prev" title="La meva biblioteca" href="moduls_biblioteques.html" />
      
     <script class="googleanalytics" src="_static/moiscripts.js"></script>
     <meta name="robots" content="noindex">
@@ -63,21 +63,20 @@
 <li class="toctree-l1 current"><a class="reference internal" href="moduls.html">Mòduls</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="moduls_junit.html">Una mica de bricolatge</a></li>
 <li class="toctree-l2"><a class="reference internal" href="moduls_intro.html">Un primer contacte</a></li>
-<li class="toctree-l2"><a class="reference internal" href="moduls_funcions.html">Funcions</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="moduls_exercicis.html">Llista d'exercicis</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="moduls_exercicis_intro.html">Llista d'exercicis del primer contacte amb mòduls</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="moduls_exercicis_funcions.html">Llista d'exercicis de funcions i variables</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="exercici_16_01_ocurrencies.html"> Exercici 16_01. Compara ocurrències</a></li>
-<li class="toctree-l4"><a class="reference internal" href="exercici_16_02_compta_vocals.html"> Exercici 16_02. Compta vocals</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#"> Exercici 16_03. Matricules italianes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="exercici_16_04_tipus_moduls.html"> Exercici 16_04. Tipus de mòduls</a></li>
-<li class="toctree-l4"><a class="reference internal" href="exercici_16_05_utilitats_confirmacio.html"> Exercici 16_05. Utilitats de confirmació</a></li>
-<li class="toctree-l4"><a class="reference internal" href="exercici_16_06_esvocal.html"> Exercici 16_06. És vocal</a></li>
-<li class="toctree-l4"><a class="reference internal" href="exercici_16_07_vocalsmajuscules.html"> Exercici 16_07. Vocals en majúscules</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="moduls_funcions.html">Funcions</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="funcions_intro.html">El que ja sabem dels mòduls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="funcions_nou_tipus.html">Un nou tipus de mòdul</a></li>
+<li class="toctree-l3"><a class="reference internal" href="funcions_crides.html">Aprofitem la funció</a></li>
+<li class="toctree-l3"><a class="reference internal" href="funcions_eficiencia.html">Breu consideració sobre eficiència</a></li>
+<li class="toctree-l3"><a class="reference internal" href="funcions_return.html">Sobre el <code class="docutils literal notranslate"><span class="pre">return</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="funcions_arreu.html">Funcions arreu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="funcions_collaterals.html">Efectes col·laterals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="moduls_reutilitzacio.html">Reutilització dels mòduls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="moduls_biblioteques.html">La meva biblioteca</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Repàs sobre funcions i procediments</a></li>
 </ul>
 </li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="moduls_exercicis.html">Llista d'exercicis</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="apendix.html">Apèndix</a></li>
@@ -98,14 +97,13 @@
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="moduls.html">Mòduls</a></li>
-          <li class="breadcrumb-item"><a href="moduls_exercicis.html">Llista d'exercicis</a></li>
-          <li class="breadcrumb-item"><a href="moduls_exercicis_funcions.html">Llista d'exercicis de funcions i variables</a></li>
-      <li class="breadcrumb-item active"> Exercici 16_03. Matricules italianes</li>
+          <li class="breadcrumb-item"><a href="moduls_funcions.html">Funcions</a></li>
+      <li class="breadcrumb-item active">Repàs sobre funcions i procediments</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
-        <a href="exercici_16_02_compta_vocals.html" class="btn btn-neutral float-left" title="Exercici 16_02. Compta vocals" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="exercici_16_04_tipus_moduls.html" class="btn btn-neutral float-right" title="Exercici 16_04. Tipus de mòduls" accesskey="n">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="moduls_biblioteques.html" class="btn btn-neutral float-left" title="La meva biblioteca" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="moduls_exercicis.html" class="btn btn-neutral float-right" title="Llista d&#39;exercicis" accesskey="n">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
@@ -113,26 +111,62 @@
     
            <div itemprop="articleBody">
              
-  <section id="exerciseicon-t-exercici-16-03-matricules-italianes">
-<h1><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> Exercici 16_03. Matricules italianes<a class="headerlink" href="#exerciseicon-t-exercici-16-03-matricules-italianes" title="Enllaça amb aquesta capçalera"></a></h1>
-<p class="rubric">Context</p>
-<ul class="simple">
-<li><p>Carpeta de lliurament: <code class="docutils literal notranslate"><span class="pre">16_03_matricula_italiana/</span></code></p></li>
-<li><p>Continguts relacionats: <a class="reference internal" href="funcions_arreu.html"><span class="doc">Funcions arreu</span></a></p></li>
-<li><p>Com lliurar-lo: <a class="reference internal" href="com_lliurar.html#instruccions-git"><span class="std std-ref">instruccions</span></a></p></li>
-<li><p>[✓] Exercici amb <a class="reference internal" href="sobre_exercicis.html#descripcio-exercicis-autoavaluacio"><span class="std std-ref">autoavaluació</span></a></p></li>
+  <section id="repas-sobre-funcions-i-procediments">
+<h1>Repàs sobre funcions i procediments<a class="headerlink" href="#repas-sobre-funcions-i-procediments" title="Enllaça amb aquesta capçalera"></a></h1>
+<p>Com a resum d'aquesta secció ens queden les següents definicions:</p>
+<figure class="align-center" id="id1">
+<p class="plantuml">
+<img src="_images/plantuml-8c08579f3ab6c47289b81cca9924223797b46d04.png" alt="&#64;startuml
+
+hide circle
+hide empty members
+skinparam monochrome true
+
+class Mòduls
+class Procediments extends Mòduls
+class Funcions extends Mòduls
+class Pures extends Funcions
+class Impures extends Funcions
+
+&#64;enduml"/>
+</p>
+<figcaption>
+<p><span class="caption-text">Mòduls</span><a class="headerlink" href="#id1" title="Enllaça amb aquesta imatge"></a></p>
+</figcaption>
+</figure>
+<ul>
+<li><p>funció: un mòdul que retorna un valor amb <code class="docutils literal notranslate"><span class="pre">return</span></code>.</p>
+<p>Les funcions que hem vist fins ara s'adapten a la plantilla:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>public static «tipus» «nom de la funció»(«zero o més paràmetres») {
+    «instruccions del bloc»
+    return «valor del tipus»;
+}
+</pre></div>
+</div>
+<p>On «tipus» és qualsevol dels tipus vàlids (no <code class="docutils literal notranslate"><span class="pre">void</span></code>)</p>
+</li>
+<li><p>procediment: mòdul que no retorna cap valor amb <code class="docutils literal notranslate"><span class="pre">return</span></code>.</p>
+<p>Els procediments poden tenir <code class="docutils literal notranslate"><span class="pre">return</span></code> però aquest vindrà immediatament
+seguit del punt i coma que finalitza la sentència.</p>
+<p>La plantilla pels procediments és:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>public static void «nom de la funció»(«zero o més paràmetres») {
+    «instruccions del bloc»
+    return; // si cal
+}
+</pre></div>
+</div>
+</li>
+<li><p>funció pura: funció que no modifica l'entorn i que, amb els mateixos
+arguments, sempre retorna el mateix resultat en ser cridada.</p></li>
+<li><p>funció impura: funció que altera l'entorn, per exemple, llegint de
+l'entrada estàndard, i que pot no retornar sempre el mateix valor per
+crides amb els mateixos arguments.</p>
+<p>A aquesta alteració de l'entorn li diem &quot;efectes col·laterals&quot;</p>
+</li>
+<li><p>punt de sortida: cada punt pel que pot finalitzar un mòdul. Podem
+considerar cada cop que apareix un <code class="docutils literal notranslate"><span class="pre">return</span></code> o bé quan s'acaben les
+instruccions del cos del mòdul.</p></li>
 </ul>
-<p class="rubric">Enunciat</p>
-<p>En aquesta ocasió rescatarem l'exercici de les <a class="reference internal" href="exercici_12_06_matricula_italiana.html"><span class="doc">matrícules italanes</span></a> i en farem una nova versió que farà
-servir la funció <code class="docutils literal notranslate"><span class="pre">esLletraValidaPerMatriculaItaliana()</span></code> que rep un
-caràcter i retorna un booleà a cert quan el caràcter pot ser una lletra
-vàlida per una matrícula italiana.</p>
-<p>Així, caldrà reprogramar el <code class="docutils literal notranslate"><span class="pre">main()</span></code> del programa de manera que, allà on
-feies les comparacions per decidir si un caràcter era o no una lletra
-vàlida, ara faràs una crida a la nova funció.</p>
-<p><strong>Nota</strong>: Aquell exercici va aparèixer en un context en que no s'havien
-presentat els recorreguts de Strings. Ara que ja en saps, potser voldràs
-simplificar encara més el teu programa.</p>
 </section>
 
 
@@ -161,8 +195,8 @@ simplificar encara més el teu programa.</p>
 </div>
 
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="exercici_16_02_compta_vocals.html" class="btn btn-neutral float-left" title="Exercici 16_02. Compta vocals" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="exercici_16_04_tipus_moduls.html" class="btn btn-neutral float-right" title="Exercici 16_04. Tipus de mòduls" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="moduls_biblioteques.html" class="btn btn-neutral float-left" title="La meva biblioteca" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="moduls_exercicis.html" class="btn btn-neutral float-right" title="Llista d&#39;exercicis" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

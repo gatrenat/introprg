@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exercici 16_03. Matricules italianes &mdash; Introducció a la programació amb Java 2025-26 documentació</title>
+  <title>Exercici 16_06. És vocal &mdash; Introducció a la programació amb Java 2025-26 documentació</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=eafc0fe6" />
@@ -26,8 +26,8 @@
     <link rel="author" title="Quant a aquests documents" href="about.html" />
     <link rel="index" title="Índex" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
-    <link rel="next" title="Exercici 16_04. Tipus de mòduls" href="exercici_16_04_tipus_moduls.html" />
-    <link rel="prev" title="Exercici 16_02. Compta vocals" href="exercici_16_02_compta_vocals.html" />
+    <link rel="next" title="Exercici 16_07. Vocals en majúscules" href="exercici_16_07_vocalsmajuscules.html" />
+    <link rel="prev" title="Exercici 16_05. Utilitats de confirmació" href="exercici_16_05_utilitats_confirmacio.html" />
      
     <script class="googleanalytics" src="_static/moiscripts.js"></script>
     <meta name="robots" content="noindex">
@@ -69,10 +69,10 @@
 <li class="toctree-l3 current"><a class="reference internal" href="moduls_exercicis_funcions.html">Llista d'exercicis de funcions i variables</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="exercici_16_01_ocurrencies.html"> Exercici 16_01. Compara ocurrències</a></li>
 <li class="toctree-l4"><a class="reference internal" href="exercici_16_02_compta_vocals.html"> Exercici 16_02. Compta vocals</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#"> Exercici 16_03. Matricules italianes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_03_matricula_italiana.html"> Exercici 16_03. Matricules italianes</a></li>
 <li class="toctree-l4"><a class="reference internal" href="exercici_16_04_tipus_moduls.html"> Exercici 16_04. Tipus de mòduls</a></li>
 <li class="toctree-l4"><a class="reference internal" href="exercici_16_05_utilitats_confirmacio.html"> Exercici 16_05. Utilitats de confirmació</a></li>
-<li class="toctree-l4"><a class="reference internal" href="exercici_16_06_esvocal.html"> Exercici 16_06. És vocal</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#"> Exercici 16_06. És vocal</a></li>
 <li class="toctree-l4"><a class="reference internal" href="exercici_16_07_vocalsmajuscules.html"> Exercici 16_07. Vocals en majúscules</a></li>
 </ul>
 </li>
@@ -100,12 +100,12 @@
           <li class="breadcrumb-item"><a href="moduls.html">Mòduls</a></li>
           <li class="breadcrumb-item"><a href="moduls_exercicis.html">Llista d'exercicis</a></li>
           <li class="breadcrumb-item"><a href="moduls_exercicis_funcions.html">Llista d'exercicis de funcions i variables</a></li>
-      <li class="breadcrumb-item active"> Exercici 16_03. Matricules italianes</li>
+      <li class="breadcrumb-item active"> Exercici 16_06. És vocal</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
-        <a href="exercici_16_02_compta_vocals.html" class="btn btn-neutral float-left" title="Exercici 16_02. Compta vocals" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="exercici_16_04_tipus_moduls.html" class="btn btn-neutral float-right" title="Exercici 16_04. Tipus de mòduls" accesskey="n">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="exercici_16_05_utilitats_confirmacio.html" class="btn btn-neutral float-left" title="Exercici 16_05. Utilitats de confirmació" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="exercici_16_07_vocalsmajuscules.html" class="btn btn-neutral float-right" title="Exercici 16_07. Vocals en majúscules" accesskey="n">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
@@ -113,26 +113,67 @@
     
            <div itemprop="articleBody">
              
-  <section id="exerciseicon-t-exercici-16-03-matricules-italianes">
-<h1><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> Exercici 16_03. Matricules italianes<a class="headerlink" href="#exerciseicon-t-exercici-16-03-matricules-italianes" title="Enllaça amb aquesta capçalera"></a></h1>
+  <section id="exerciseicon-t-exercici-16-06-es-vocal">
+<h1><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> Exercici 16_06. És vocal<a class="headerlink" href="#exerciseicon-t-exercici-16-06-es-vocal" title="Enllaça amb aquesta capçalera"></a></h1>
 <p class="rubric">Context</p>
 <ul class="simple">
-<li><p>Carpeta de lliurament: <code class="docutils literal notranslate"><span class="pre">16_03_matricula_italiana/</span></code></p></li>
-<li><p>Continguts relacionats: <a class="reference internal" href="funcions_arreu.html"><span class="doc">Funcions arreu</span></a></p></li>
+<li><p>Carpeta de lliurament: <code class="docutils literal notranslate"><span class="pre">16_06_esvocal/</span></code></p></li>
+<li><p>Continguts relacionats: <a class="reference internal" href="moduls_biblioteques.html"><span class="doc">La meva biblioteca</span></a></p></li>
 <li><p>Com lliurar-lo: <a class="reference internal" href="com_lliurar.html#instruccions-git"><span class="std std-ref">instruccions</span></a></p></li>
 <li><p>[✓] Exercici amb <a class="reference internal" href="sobre_exercicis.html#descripcio-exercicis-autoavaluacio"><span class="std std-ref">autoavaluació</span></a></p></li>
 </ul>
 <p class="rubric">Enunciat</p>
-<p>En aquesta ocasió rescatarem l'exercici de les <a class="reference internal" href="exercici_12_06_matricula_italiana.html"><span class="doc">matrícules italanes</span></a> i en farem una nova versió que farà
-servir la funció <code class="docutils literal notranslate"><span class="pre">esLletraValidaPerMatriculaItaliana()</span></code> que rep un
-caràcter i retorna un booleà a cert quan el caràcter pot ser una lletra
-vàlida per una matrícula italiana.</p>
-<p>Així, caldrà reprogramar el <code class="docutils literal notranslate"><span class="pre">main()</span></code> del programa de manera que, allà on
-feies les comparacions per decidir si un caràcter era o no una lletra
-vàlida, ara faràs una crida a la nova funció.</p>
-<p><strong>Nota</strong>: Aquell exercici va aparèixer en un context en que no s'havien
-presentat els recorreguts de Strings. Ara que ja en saps, potser voldràs
-simplificar encara més el teu programa.</p>
+<p>En diferents exercicis ens hem trobat la necessitat de distingir si un caràcter
+és o no una vocal. Ara que ja coneixem les funcions, podem definir la nostra
+funció <code class="docutils literal notranslate"><span class="pre">esVocal()</span></code> que rebi un caràcter i retorni un booleà indicant si el
+caràcter correspon o no amb una vocal catalana en minúscules.</p>
+<p>Considerarem com a vocals totes les variants d'accents i dièresis de les vocals
+catalanes. Recorda que aquests variants són, a banda de les cinc habituals,
+<code class="docutils literal notranslate"><span class="pre">à</span></code>, <code class="docutils literal notranslate"><span class="pre">è</span></code>, <code class="docutils literal notranslate"><span class="pre">é</span></code>, <code class="docutils literal notranslate"><span class="pre">í</span></code>, <code class="docutils literal notranslate"><span class="pre">ï</span></code>, <code class="docutils literal notranslate"><span class="pre">ò</span></code>, <code class="docutils literal notranslate"><span class="pre">ó</span></code>, <code class="docutils literal notranslate"><span class="pre">ú</span></code> i <code class="docutils literal notranslate"><span class="pre">ü</span></code>.</p>
+<section id="que-has-de-fer">
+<h2>Què has de fer<a class="headerlink" href="#que-has-de-fer" title="Enllaça amb aquesta capçalera"></a></h2>
+<p>En aquest exercici hi haurà tres fitxers:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">UtilString.java</span></code>: contindrà la funció <code class="docutils literal notranslate"><span class="pre">esVocal()</span></code>. No cal que
+contingui <code class="docutils literal notranslate"><span class="pre">main()</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">LloroVocalIniciFi.java</span></code>: una nova versió entre mig de
+<a class="reference internal" href="exercici_12_04_vocalmin.html"><span class="doc">l'exercici de vocals a l'inici</span></a> i
+<a class="reference internal" href="exercici_13_06_vocalinicifi.html"><span class="doc">el de vocals al final</span></a>
+que farà servir la nova funció per que el lloro repeteixi qualsevol text
+que comenci o acabi en vocal en minúscules.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">UtilitatsConfirmacio.java</span></code>: que ja tens d'un <a class="reference internal" href="exercici_16_05_utilitats_confirmacio.html"><span class="doc">exercici anterior</span></a></p></li>
+</ul>
+<p>Una simulació d'execució seria:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go"> Text?</span>
+<span class="hll"><span class="go"> ànec</span>
+</span><span class="go"> 1: &quot;ànec&quot;</span>
+<span class="go"> Text?</span>
+<span class="hll"><span class="go"> lleó</span>
+</span><span class="go"> 2: &quot;lleó&quot;</span>
+<span class="go"> Text?</span>
+<span class="hll"><span class="go"> gos</span>
+</span><span class="go"> Text?</span>
+<span class="hll"><span class="go"> gacel·la</span>
+</span><span class="go"> 3: &quot;gacel·la&quot;</span>
+<span class="go"> Text?</span>
+<span class="hll">
+</span><span class="go"> Sortir?</span>
+<span class="hll"><span class="go"> encara no</span>
+</span><span class="go"> Text?</span>
+<span class="hll">
+</span><span class="go"> Sortir?</span>
+<span class="hll"><span class="go"> sí</span>
+</span><span class="go"> Adéu</span>
+</pre></div>
+</div>
+</section>
+<section id="pista">
+<h2>Pista<a class="headerlink" href="#pista" title="Enllaça amb aquesta capçalera"></a></h2>
+<p><strong>Només</strong> si no te'n surts.</p>
+<p>És cert que <code class="docutils literal notranslate"><span class="pre">esVocal()</span></code> només funciona amb vocals en minúscules, però també
+és cert que <code class="docutils literal notranslate"><span class="pre">LloroVocalIniciFi</span></code> no té perquè passar-li exactament els
+caràcters que rep.</p>
+</section>
 </section>
 
 
@@ -161,8 +202,8 @@ simplificar encara més el teu programa.</p>
 </div>
 
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="exercici_16_02_compta_vocals.html" class="btn btn-neutral float-left" title="Exercici 16_02. Compta vocals" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="exercici_16_04_tipus_moduls.html" class="btn btn-neutral float-right" title="Exercici 16_04. Tipus de mòduls" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="exercici_16_05_utilitats_confirmacio.html" class="btn btn-neutral float-left" title="Exercici 16_05. Utilitats de confirmació" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="exercici_16_07_vocalsmajuscules.html" class="btn btn-neutral float-right" title="Exercici 16_07. Vocals en majúscules" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

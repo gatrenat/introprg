@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exercici 16_03. Matricules italianes &mdash; Introducció a la programació amb Java 2025-26 documentació</title>
+  <title>Exercici 16_07. Vocals en majúscules &mdash; Introducció a la programació amb Java 2025-26 documentació</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=eafc0fe6" />
@@ -26,8 +26,8 @@
     <link rel="author" title="Quant a aquests documents" href="about.html" />
     <link rel="index" title="Índex" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
-    <link rel="next" title="Exercici 16_04. Tipus de mòduls" href="exercici_16_04_tipus_moduls.html" />
-    <link rel="prev" title="Exercici 16_02. Compta vocals" href="exercici_16_02_compta_vocals.html" />
+    <link rel="next" title="Apèndix" href="apendix.html" />
+    <link rel="prev" title="Exercici 16_06. És vocal" href="exercici_16_06_esvocal.html" />
      
     <script class="googleanalytics" src="_static/moiscripts.js"></script>
     <meta name="robots" content="noindex">
@@ -69,11 +69,11 @@
 <li class="toctree-l3 current"><a class="reference internal" href="moduls_exercicis_funcions.html">Llista d'exercicis de funcions i variables</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="exercici_16_01_ocurrencies.html"> Exercici 16_01. Compara ocurrències</a></li>
 <li class="toctree-l4"><a class="reference internal" href="exercici_16_02_compta_vocals.html"> Exercici 16_02. Compta vocals</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#"> Exercici 16_03. Matricules italianes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_03_matricula_italiana.html"> Exercici 16_03. Matricules italianes</a></li>
 <li class="toctree-l4"><a class="reference internal" href="exercici_16_04_tipus_moduls.html"> Exercici 16_04. Tipus de mòduls</a></li>
 <li class="toctree-l4"><a class="reference internal" href="exercici_16_05_utilitats_confirmacio.html"> Exercici 16_05. Utilitats de confirmació</a></li>
 <li class="toctree-l4"><a class="reference internal" href="exercici_16_06_esvocal.html"> Exercici 16_06. És vocal</a></li>
-<li class="toctree-l4"><a class="reference internal" href="exercici_16_07_vocalsmajuscules.html"> Exercici 16_07. Vocals en majúscules</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#"> Exercici 16_07. Vocals en majúscules</a></li>
 </ul>
 </li>
 </ul>
@@ -100,12 +100,12 @@
           <li class="breadcrumb-item"><a href="moduls.html">Mòduls</a></li>
           <li class="breadcrumb-item"><a href="moduls_exercicis.html">Llista d'exercicis</a></li>
           <li class="breadcrumb-item"><a href="moduls_exercicis_funcions.html">Llista d'exercicis de funcions i variables</a></li>
-      <li class="breadcrumb-item active"> Exercici 16_03. Matricules italianes</li>
+      <li class="breadcrumb-item active"> Exercici 16_07. Vocals en majúscules</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
-        <a href="exercici_16_02_compta_vocals.html" class="btn btn-neutral float-left" title="Exercici 16_02. Compta vocals" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="exercici_16_04_tipus_moduls.html" class="btn btn-neutral float-right" title="Exercici 16_04. Tipus de mòduls" accesskey="n">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="exercici_16_06_esvocal.html" class="btn btn-neutral float-left" title="Exercici 16_06. És vocal" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="apendix.html" class="btn btn-neutral float-right" title="Apèndix" accesskey="n">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
@@ -113,26 +113,36 @@
     
            <div itemprop="articleBody">
              
-  <section id="exerciseicon-t-exercici-16-03-matricules-italianes">
-<h1><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> Exercici 16_03. Matricules italianes<a class="headerlink" href="#exerciseicon-t-exercici-16-03-matricules-italianes" title="Enllaça amb aquesta capçalera"></a></h1>
+  <section id="exerciseicon-t-exercici-16-07-vocals-en-majuscules">
+<h1><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> Exercici 16_07. Vocals en majúscules<a class="headerlink" href="#exerciseicon-t-exercici-16-07-vocals-en-majuscules" title="Enllaça amb aquesta capçalera"></a></h1>
 <p class="rubric">Context</p>
 <ul class="simple">
-<li><p>Carpeta de lliurament: <code class="docutils literal notranslate"><span class="pre">16_03_matricula_italiana/</span></code></p></li>
-<li><p>Continguts relacionats: <a class="reference internal" href="funcions_arreu.html"><span class="doc">Funcions arreu</span></a></p></li>
+<li><p>Carpeta de lliurament: <code class="docutils literal notranslate"><span class="pre">16_07_vocalsmajuscules/</span></code></p></li>
+<li><p>Continguts relacionats: <a class="reference internal" href="moduls_biblioteques.html"><span class="doc">La meva biblioteca</span></a></p></li>
 <li><p>Com lliurar-lo: <a class="reference internal" href="com_lliurar.html#instruccions-git"><span class="std std-ref">instruccions</span></a></p></li>
 <li><p>[✓] Exercici amb <a class="reference internal" href="sobre_exercicis.html#descripcio-exercicis-autoavaluacio"><span class="std std-ref">autoavaluació</span></a></p></li>
 </ul>
 <p class="rubric">Enunciat</p>
-<p>En aquesta ocasió rescatarem l'exercici de les <a class="reference internal" href="exercici_12_06_matricula_italiana.html"><span class="doc">matrícules italanes</span></a> i en farem una nova versió que farà
-servir la funció <code class="docutils literal notranslate"><span class="pre">esLletraValidaPerMatriculaItaliana()</span></code> que rep un
-caràcter i retorna un booleà a cert quan el caràcter pot ser una lletra
-vàlida per una matrícula italiana.</p>
-<p>Així, caldrà reprogramar el <code class="docutils literal notranslate"><span class="pre">main()</span></code> del programa de manera que, allà on
-feies les comparacions per decidir si un caràcter era o no una lletra
-vàlida, ara faràs una crida a la nova funció.</p>
-<p><strong>Nota</strong>: Aquell exercici va aparèixer en un context en que no s'havien
-presentat els recorreguts de Strings. Ara que ja en saps, potser voldràs
-simplificar encara més el teu programa.</p>
+<p>Ara que disposem de la funció que ens indica si un caracter és o no vocal, ens
+hauria de resultar molt còmode fer exercicis que maneguen vocals.</p>
+<p>Desenvolupa un programa anomenat <code class="docutils literal notranslate"><span class="pre">VocalsMajuscules</span></code> que demani un text
+i mostri totes les lletres en minúscules excepte les vocals, que hauran
+de quedar en majúscules.</p>
+<p>Un exemple d'execució seria:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Text?</span>
+<span class="hll"><span class="go">Els 4 Genets de l&#39;Apocalipsi!</span>
+</span><span class="go">Els 4 gEnEts dE l&#39;ApOcAlIpsI!</span>
+</pre></div>
+</div>
+<p>Caldrà que desenvolupis un nou mòdul dins de <code class="docutils literal notranslate"><span class="pre">VocalsMajuscules</span></code> que per cada
+caracter rebut, si és una vocal minúscula la posa en majúscules i si no, el
+deixa com estava.</p>
+<p>La signatura del nou mòdul serà:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">majusculitzaVocals</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Per passar totes les proves caldrà que facis ús d'una o més funcions de les
+que ja has desenvolupat.</p>
 </section>
 
 
@@ -161,8 +171,8 @@ simplificar encara més el teu programa.</p>
 </div>
 
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="exercici_16_02_compta_vocals.html" class="btn btn-neutral float-left" title="Exercici 16_02. Compta vocals" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="exercici_16_04_tipus_moduls.html" class="btn btn-neutral float-right" title="Exercici 16_04. Tipus de mòduls" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="exercici_16_06_esvocal.html" class="btn btn-neutral float-left" title="Exercici 16_06. És vocal" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="apendix.html" class="btn btn-neutral float-right" title="Apèndix" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
