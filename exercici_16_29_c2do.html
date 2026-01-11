@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ca" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercici 16_29. Traducció de C a Do &mdash; Introducció a la programació amb Java 2025-26 documentació</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=eafc0fe6" />
+      <link rel="stylesheet" type="text/css" href="_static/moistyle.css?v=0e2f4d36" />
+
+  
+    <link rel="shortcut icon" href="_static/logoprg.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=45133d6c"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/translations.js?v=d8dd923b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="author" title="Quant a aquests documents" href="about.html" />
+    <link rel="index" title="Índex" href="genindex.html" />
+    <link rel="search" title="Cerca" href="search.html" />
+    <link rel="next" title="Exercici 16_30. Progressió de les paraules" href="exercici_16_30_progressio.html" />
+    <link rel="prev" title="Exercici 16_28. Les lletres del revés" href="exercici_16_28_lletresreves.html" />
+     
+    <script class="googleanalytics" src="_static/moiscripts.js"></script>
+    <meta name="robots" content="noindex">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Introducció a la programació amb Java
+              <img src="_static/logoprg.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                Curs 2025-26
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="primeres_passes.html">Primeres passes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basics.html">Elements bàsics de la programació</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="moduls.html">Mòduls</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="moduls_junit.html">Una mica de bricolatge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="moduls_intro.html">Un primer contacte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="moduls_funcions.html">Funcions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="moduls_exercicis.html">Llista d'exercicis</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="moduls_exercicis_intro.html">Llista d'exercicis del primer contacte amb mòduls</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="moduls_exercicis_funcions.html">Llista d'exercicis de funcions i variables</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_01_ocurrencies.html"> Exercici 16_01. Compara ocurrències</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_02_compta_vocals.html"> Exercici 16_02. Compta vocals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_03_matricula_italiana.html"> Exercici 16_03. Matricules italianes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_04_tipus_moduls.html"> Exercici 16_04. Tipus de mòduls</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_05_utilitats_confirmacio.html"> Exercici 16_05. Utilitats de confirmació</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_06_esvocal.html"> Exercici 16_06. És vocal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_07_vocalsmajuscules.html"> Exercici 16_07. Vocals en majúscules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_08_variables.html"> Exercici 16_08. Classifiquem les variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_09_nomeslletres.html"> Exercici 16_09. Només lletres</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_10_comptavocals.html"> Exercici 16_10. Comptant vocals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_11_texttransformat.html"> Exercici 16_11. El text transformat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_12_majusculitza.html"> Exercici 16_12. Inicials en majúscules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_13_textreves.html"> Exercici 16_13. El text del revés</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_14_codifica.html"> Exercici 16_14. Codifica avançat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_15_normalitzador.html"> Exercici 16_15. Normalització de lletres</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_16_strip.html"> Exercici 16_16. Normalitzador d'espais</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_17_esenter.html"> Exercici 16_17. És enter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_18_esentersegur.html"> Exercici 16_18. És enter segur</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_19_esenterflex.html"> Exercici 16_19. És enter flexible</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_20_cadena.html"> Exercici 16_20. Cadena continua en funció</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_21_interval.html"> Exercici 16_21. Interval d'un String</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_22_informetext.html"> Exercici 16_22. Estadístiques d'un text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_23_esprefix.html"> Exercici 16_23. Prefixos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_24_essufix.html"> Exercici 16_24. Sufixos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_25_essubstring.html"> Exercici 16_25. Substrings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_26_quants.html"> Exercici 16_26. Quants cops</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_27_paraulesreves.html"> Exercici 16_27. Paraules del revés</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_28_lletresreves.html"> Exercici 16_28. Les lletres del revés</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#"> Exercici 16_29. Traducció de C a Do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_16_30_progressio.html"> Exercici 16_30. Progressió de les paraules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="moduls_variables.html">Variables i mòduls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="moduls_practica.html">Toca modular</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="apendix.html">Apèndix</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Introducció a la programació amb Java</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="moduls.html">Mòduls</a></li>
+          <li class="breadcrumb-item"><a href="moduls_exercicis.html">Llista d'exercicis</a></li>
+          <li class="breadcrumb-item"><a href="moduls_exercicis_funcions.html">Llista d'exercicis de funcions i variables</a></li>
+      <li class="breadcrumb-item active"> Exercici 16_29. Traducció de C a Do</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="exercici_16_28_lletresreves.html" class="btn btn-neutral float-left" title="Exercici 16_28. Les lletres del revés" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="exercici_16_30_progressio.html" class="btn btn-neutral float-right" title="Exercici 16_30. Progressió de les paraules" accesskey="n">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+    
+           <div itemprop="articleBody">
+             
+  <section id="exerciseicon-st-exercici-16-29-traduccio-de-c-a-do">
+<h1><img alt="exerciseicon_ST" src="_images/exerciseicon_ST.png" /> Exercici 16_29. Traducció de C a Do<a class="headerlink" href="#exerciseicon-st-exercici-16-29-traduccio-de-c-a-do" title="Enllaça amb aquesta capçalera"></a></h1>
+<p class="rubric">Context</p>
+<ul class="simple">
+<li><p>Carpeta de lliurament: <code class="docutils literal notranslate"><span class="pre">16_29_c2do/</span></code></p></li>
+<li><p>Continguts relacionats: <a class="reference internal" href="moduls_practica.html"><span class="doc">Toca modular</span></a></p></li>
+<li><p>Com lliurar-lo: <a class="reference internal" href="com_lliurar.html#instruccions-git"><span class="std std-ref">instruccions</span></a></p></li>
+<li><p>[☆] Exercici amb <a class="reference internal" href="sobre_exercicis.html#descripcio-exercicis-dificils"><span class="std std-ref">dificultat addicional</span></a></p></li>
+<li><p>[✓] Exercici amb <a class="reference internal" href="sobre_exercicis.html#descripcio-exercicis-autoavaluacio"><span class="std std-ref">autoavaluació</span></a></p></li>
+</ul>
+<p class="rubric">Enunciat</p>
+<p>Entre les aficions de la nostra amiga Kiara<a class="footnote-reference brackets" href="#dedicat" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> està la de descobrir
+com tocar peces musicals a partir de les notes de la seva melodia.</p>
+<p>Hi ha dues maneres principals per referir-se a les notes musicals en occident:
+la notació llatina i l'anglosaxona.</p>
+<p>Aquesta és la relació:</p>
+<style>
+.centered-table td {
+   text-align: center;
+}
+</style><table class="centered-table docutils align-center">
+<tbody>
+<tr class="row-odd"><td><p><strong>Llatina</strong></p></td>
+<td><p><strong>Anglosaxona</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Do</p></td>
+<td><p>C</p></td>
+</tr>
+<tr class="row-odd"><td><p>Re</p></td>
+<td><p>D</p></td>
+</tr>
+<tr class="row-even"><td><p>Mi</p></td>
+<td><p>E</p></td>
+</tr>
+<tr class="row-odd"><td><p>Fa</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-even"><td><p>Sol</p></td>
+<td><p>G</p></td>
+</tr>
+<tr class="row-odd"><td><p>La</p></td>
+<td><p>A</p></td>
+</tr>
+<tr class="row-even"><td><p>Si</p></td>
+<td><p>B</p></td>
+</tr>
+</tbody>
+</table>
+<p>Tot i que la nostra amiga no té cap problema de llegir les notes en qualsevol de les
+notacions, el cert és que li resulta molt més agradable treballar amb la
+notació llatina, amb la que va aprendre de petita.</p>
+<p>Una altra de les seves aficions és la programació, així que ha decidit fer un
+programa que li faci la conversió de la notació anglosaxona a la llatina.</p>
+<p>El programa rep un text per entrada estàndard i canvia tot el que sembla una nota
+anglosaxona a una de llatina.</p>
+<p>Per considerar una nota anglosaxona, el programa considera que:</p>
+<ul class="simple">
+<li><p>Ha de ser una de les set lletres, de la 'A' a la 'G'.</p></li>
+<li><p>La lletra ha d'aparèixer en majúscules.</p></li>
+<li><p>Immediatament abans de la lletra no pot haver-hi cap lletra, número ni el
+caràcter '#'. Pot no haver-hi res si és el primer caràcter del String.</p></li>
+<li><p>Després de la lletra, la cosa es complica una mica:</p>
+<ul>
+<li><p>Pot no haver-hi res (s'ha acabat el String)</p></li>
+<li><p>Pot haver-hi un número del 0 al 8.</p></li>
+<li><p>Totes les notes, excepte B (Si) i E (Mi) poden estar seguides del modificador '#'.</p></li>
+<li><p>Totes les notes, excepte C (Do) i F (Fa) poden estar seguides del modificador 'b'.</p></li>
+<li><p>En cas que la nota aparegui seguida d'un modificador, encara pot estar
+seguit d'un número del 0 al 8.</p></li>
+<li><p>Tant si finalitza amb la lletra, com si finalitza amb el '#' o 'b', com si
+ho fa amb un dels números, a continuació només pot haver-hi, o bé res, per
+què acaba el string, o bé un blanc, o bé un caràcter que no sigui ni
+lletra, ni número, ni '#'.<a class="footnote-reference brackets" href="#simplificat" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p></li>
+</ul>
+</li>
+</ul>
+<p>La música pot ser molt maca però no és necessàriament fàcil, oi?</p>
+<p>Alguns exemples de notes vàlides:</p>
+<ul class="simple">
+<li><p>&quot;C&quot; és la nota natural que en notació llatina es tradueix com a &quot;Do&quot;</p></li>
+<li><p>&quot;F#&quot; és un &quot;Fa&quot; <em>sostingut</em></p></li>
+<li><p>&quot;Bb&quot; és un &quot;Si&quot; <em>bemoll</em>, o &quot;Sib&quot;</p></li>
+<li><p>&quot;C4&quot; és el &quot;Do&quot; central d'un piano, o &quot;Do4&quot;</p></li>
+<li><p>&quot;F#5&quot; és el &quot;Fa&quot; sostingut de la cinquena octava, o &quot;Fa#5&quot;</p></li>
+</ul>
+<p>Per exemple, la frase:</p>
+<blockquote>
+<div><p>&quot;L'acord en C major està format per les notes C, E i G.&quot;</p>
+</div></blockquote>
+<p>seria convertida a:</p>
+<blockquote>
+<div><p>&quot;L'acord en Do major està format per les notes Do, Mi i Sol.&quot;</p>
+</div></blockquote>
+<p>A la nostra amiga li ha agradat molt fer aquest programa i m'ha recomanat que
+te l'ofereixi com a exercici perquè també tu practiquis.</p>
+<section id="que-has-de-fer">
+<h2>Què has de fer?<a class="headerlink" href="#que-has-de-fer" title="Enllaça amb aquesta capçalera"></a></h2>
+<p>Desenvolupa un <em>lloro</em> que vagi acceptant frases i que vagi convertint les
+notes <em>anglosaxones</em> a notació <em>llatina</em>.</p>
+<p>Perquè el teu programa passi totes les proves, caldrà que la teva solució
+inclogui la funció <code class="docutils literal notranslate"><span class="pre">String</span> <span class="pre">tradueixCDo(String)</span></code> que, donat un text amb
+possibles notes anglosaxones, retorni el text amb les notes reemplaçades per la
+seva versió llatina.</p>
+<p>Anomena el programa <code class="docutils literal notranslate"><span class="pre">TraductorCDo</span></code>.</p>
+</section>
+<section id="alguna-recomanacio-pista">
+<h2>Alguna recomanació/pista<a class="headerlink" href="#alguna-recomanacio-pista" title="Enllaça amb aquesta capçalera"></a></h2>
+<p>Per aquest exercici, si et cal, pots fer servir la utilitat
+<code class="docutils literal notranslate"><span class="pre">String.substring()</span></code>.</p>
+<p>De ben segur que no voldràs quedar-te només amb la funció <code class="docutils literal notranslate"><span class="pre">tradueixCDo()</span></code>.
+Per si et serveix de referència, la meva solució té més de 6 mòduls, alguns
+simplement permeten saber si un caràcter és o no una lletra vàlida per una nota
+en notació anglosaxona.</p>
+<p class="rubric">Footnotes</p>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="dedicat" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Tot i que la història que explica aquest enunciat és inventada,
+la Kiara sí és una persona real que, amb la seva afició, va inspirar aquest
+exercici.
+Li desitjo que arribi tant lluny com vulgui anar, amb o sense el seu patinet.</p>
+</aside>
+</aside>
+<a class="reference internal image-reference" href="_images/kiaraskateh.jpg"><img alt="_images/kiaraskateh.jpg" class="align-center" src="_images/kiaraskateh.jpg" style="width: 40%;" /></a>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="simplificat" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>De fet, encara hi ha més variants. En alguns casos podem
+trobar &quot;##&quot; i &quot;bb&quot;, i més octaves (exemple, al sistema MIDI podríem trobar
+del -1 fins el 9!) Per aquest exercici, i amb permís de la Kiara, ignorarem
+aquestes variants més avançades.</p>
+</aside>
+</aside>
+</section>
+</section>
+
+
+           </div>
+          </div>
+    <div class="googleanalytics">
+    <div id="cookiesbox">
+        Aquest lloc web utilitza galetes (<i>cookies</i>) per a analitzar el seu ús
+        amb les eines que ofereix <a href="https://www.google.com/analytics">Google Analytics</a>.
+        En continuar navegant-hi, estàs acceptant-ho.
+        <br/>
+        <a class="btn btn-neutral" onclick="setUserAcceptsCookies();">
+            Tancar
+            <span class="fa fa-window-close"></span>
+        </a>
+    </div>
+    <script>setCookiesboxVisibility();</script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-41103782-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+</div>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="exercici_16_28_lletresreves.html" class="btn btn-neutral float-left" title="Exercici 16_28. Les lletres del revés" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="exercici_16_30_progressio.html" class="btn btn-neutral float-right" title="Exercici 16_30. Progressió de les paraules" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025-2026 Moisès Gómez Girón.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41103782-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-41103782-2', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>
