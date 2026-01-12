@@ -26,7 +26,7 @@
     <link rel="author" title="Quant a aquests documents" href="about.html" />
     <link rel="index" title="Índex" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
-    <link rel="next" title="Llista d&#39;exercicis" href="moduls_exercicis.html" />
+    <link rel="next" title="Variables i mòduls" href="moduls_variables.html" />
     <link rel="prev" title="La meva biblioteca" href="moduls_biblioteques.html" />
      
     <script class="googleanalytics" src="_static/moiscripts.js"></script>
@@ -76,9 +76,9 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Repàs sobre funcions i procediments</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="moduls_exercicis.html">Llista d'exercicis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="moduls_variables.html">Variables i mòduls</a></li>
 <li class="toctree-l2"><a class="reference internal" href="moduls_practica.html">Toca modular</a></li>
+<li class="toctree-l2"><a class="reference internal" href="moduls_exercicis.html">Llista d'exercicis</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="apendix.html">Apèndix</a></li>
@@ -105,7 +105,7 @@
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
         <a href="moduls_biblioteques.html" class="btn btn-neutral float-left" title="La meva biblioteca" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="moduls_exercicis.html" class="btn btn-neutral float-right" title="Llista d&#39;exercicis" accesskey="n">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="moduls_variables.html" class="btn btn-neutral float-right" title="Variables i mòduls" accesskey="n">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
@@ -116,6 +116,26 @@
   <section id="repas-sobre-funcions-i-procediments">
 <h1>Repàs sobre funcions i procediments<a class="headerlink" href="#repas-sobre-funcions-i-procediments" title="Enllaça amb aquesta capçalera"></a></h1>
 <p>Com a resum d'aquesta secció ens queden les següents definicions:</p>
+<figure class="align-center" id="id1">
+<p class="plantuml">
+<img src="_images/plantuml-8c08579f3ab6c47289b81cca9924223797b46d04.png" alt="&#64;startuml
+
+hide circle
+hide empty members
+skinparam monochrome true
+
+class Mòduls
+class Procediments extends Mòduls
+class Funcions extends Mòduls
+class Pures extends Funcions
+class Impures extends Funcions
+
+&#64;enduml"/>
+</p>
+<figcaption>
+<p><span class="caption-text">Mòduls</span><a class="headerlink" href="#id1" title="Enllaça amb aquesta imatge"></a></p>
+</figcaption>
+</figure>
 <ul>
 <li><p>funció: un mòdul que retorna un valor amb <code class="docutils literal notranslate"><span class="pre">return</span></code>.</p>
 <p>Les funcions que hem vist fins ara s'adapten a la plantilla:</p>
@@ -178,7 +198,7 @@ instruccions del cos del mòdul.</p></li>
 
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="moduls_biblioteques.html" class="btn btn-neutral float-left" title="La meva biblioteca" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="moduls_exercicis.html" class="btn btn-neutral float-right" title="Llista d&#39;exercicis" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="moduls_variables.html" class="btn btn-neutral float-right" title="Variables i mòduls" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
