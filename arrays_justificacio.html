@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Llista d&#39;exercicis &mdash; Introducció a la programació amb Java 2025-26 documentació</title>
+  <title>Necessitem les seqüències &mdash; Introducció a la programació amb Java 2025-26 documentació</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=eafc0fe6" />
@@ -26,8 +26,8 @@
     <link rel="author" title="Quant a aquests documents" href="about.html" />
     <link rel="index" title="Índex" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
-    <link rel="next" title="Llista d&#39;exercicis del primer contacte amb mòduls" href="moduls_exercicis_intro.html" />
-    <link rel="prev" title="Necessitem les seqüències" href="arrays_justificacio.html" />
+    <link rel="next" title="Llista d&#39;exercicis" href="moduls_exercicis.html" />
+    <link rel="prev" title="Arrays" href="arrays.html" />
      
     <script class="googleanalytics" src="_static/moiscripts.js"></script>
     <meta name="robots" content="noindex">
@@ -66,13 +66,11 @@
 <li class="toctree-l2"><a class="reference internal" href="moduls_funcions.html">Funcions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="moduls_variables.html">Variables i mòduls</a></li>
 <li class="toctree-l2"><a class="reference internal" href="moduls_practica.html">Toca modular</a></li>
-<li class="toctree-l2"><a class="reference internal" href="arrays.html">Arrays</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Llista d'exercicis</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="moduls_exercicis_intro.html">Llista d'exercicis del primer contacte amb mòduls</a></li>
-<li class="toctree-l3"><a class="reference internal" href="moduls_exercicis_funcions.html">Llista d'exercicis de funcions i variables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="moduls_exercicis_arrays.html">Llista d'exercicis d'arrays</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="arrays.html">Arrays</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Necessitem les <em>seqüències</em></a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="moduls_exercicis.html">Llista d'exercicis</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="apendix.html">Apèndix</a></li>
@@ -93,12 +91,13 @@
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="moduls.html">Mòduls</a></li>
-      <li class="breadcrumb-item active">Llista d'exercicis</li>
+          <li class="breadcrumb-item"><a href="arrays.html">Arrays</a></li>
+      <li class="breadcrumb-item active">Necessitem les <em>seqüències</em></li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
-        <a href="arrays_justificacio.html" class="btn btn-neutral float-left" title="Necessitem les seqüències" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="moduls_exercicis_intro.html" class="btn btn-neutral float-right" title="Llista d&#39;exercicis del primer contacte amb mòduls" accesskey="n">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="arrays.html" class="btn btn-neutral float-left" title="Arrays" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="moduls_exercicis.html" class="btn btn-neutral float-right" title="Llista d&#39;exercicis" accesskey="n">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
@@ -106,16 +105,56 @@
     
            <div itemprop="articleBody">
              
-  <section id="llista-d-exercicis">
-<h1>Llista d'exercicis<a class="headerlink" href="#llista-d-exercicis" title="Enllaça amb aquesta capçalera"></a></h1>
-<p>Els exercicis del tema <a class="reference internal" href="moduls.html"><span class="doc">Mòduls</span></a> són:</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="moduls_exercicis_intro.html">Llista d'exercicis del primer contacte amb mòduls</a></li>
-<li class="toctree-l1"><a class="reference internal" href="moduls_exercicis_funcions.html">Llista d'exercicis de funcions i variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="moduls_exercicis_arrays.html">Llista d'exercicis d'arrays</a></li>
-</ul>
-</div>
+  <section id="necessitem-les-sequencies">
+<h1>Necessitem les <em>seqüències</em><a class="headerlink" href="#necessitem-les-sequencies" title="Enllaça amb aquesta capçalera"></a></h1>
+<p>Veiem si realment ens calen seqüències que no siguin de caràcter.</p>
+<p>Intenta resoldre els següents reptes usant <em>exclusivament</em> les eines que
+hem estudiat fins ara.</p>
+<section id="repte-1-la-nota-mes-alta">
+<h2>Repte 1. La nota més alta<a class="headerlink" href="#repte-1-la-nota-mes-alta" title="Enllaça amb aquesta capçalera"></a></h2>
+<p>Et proposo el següent repte en forma d'exercici:</p>
+<p><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> <a class="reference internal" href="exercici_17_01_nota_mes_alta_v1.html"><span class="doc"> Exercici 17_01. La nota més alta</span></a></p>
+<p>Llegeix l'enunciat i torna aquí quan el tinguis resolt o et calgui alguna
+pista.</p>
+<p>Ja l'has fet? No? De debò, mira de fer-lo i recorda, <strong>només</strong> amb les
+eines que tenim fins ara!</p>
+<p>Ja estàs? Suposaré que l'has fet.</p>
+</section>
+<section id="repte-2-la-nota-mes-alta-no-tan-facil">
+<h2>Repte 2. La nota més alta (no tan fàcil)<a class="headerlink" href="#repte-2-la-nota-mes-alta-no-tan-facil" title="Enllaça amb aquesta capçalera"></a></h2>
+<p>Espero que repte anterior t'hagi resultat fàcil. Altrament, et recomano que
+tornis a revisar els exercicis del <em>lloro</em>.</p>
+<aside class="sidebar">
+<p class="sidebar-title">Nota</p>
+<p>En aquesta ocasió no et donaré gaires pistes.</p>
+<a class="reference internal image-reference" href="_images/medalla_prg.png"><img alt="_images/medalla_prg.png" class="align-right" src="_images/medalla_prg.png" style="width: 50px;" /></a>
+<p>El que sí et puc dir és que si et pica aquest repte i el vols resoldre,
+fins i tot si no saps com, vol dir que tens una bona actitud per la
+programació! Medalleta per tu!</p>
+<p>D'acord, reconec que si m'insisteixes una mica, te'n donaré alguna pista.</p>
+</aside>
+<p>No deixa de ser el conegut <em>patró del Lloro</em>. És a dir, un <code class="docutils literal notranslate"><span class="pre">while</span></code> on
+anem demanant notes, anem guardant la màxima i, potser, quants en portem,
+fins rebre una nota negativa. En sortir del bucle, mostrem la màxima o un
+error si hem recollir menys de dues notes. Ja està.</p>
+<p>Donem-li una volta més. Llegeix l'enunciat del següent exercici i
+fes el possible per, com a mínim plantejar-te la seva solució. Si no se
+t'acut com resoldre'l, com a mínim t'ajudarà a entendre la importància del
+nou tema.</p>
+<p><img alt="exerciseiconOST" src="_images/exerciseiconOST.png" /> <a class="reference internal" href="exercici_17_02_nota_mes_alta_v2.html"><span class="doc"> Exercici 17_02. La nota més alta (no tan fàcil)</span></a></p>
+<p>Aquest repte encara es pot resoldre amb les eines que tenim però comença a
+costar una mica, oi?</p>
+<p>Aviat veuràs que es pot simplificar la seva resolució si disposéssim
+d'altres tipus de seqüències. En concret de notes.</p>
+</section>
+<section id="mes-reptes">
+<h2>Més reptes<a class="headerlink" href="#mes-reptes" title="Enllaça amb aquesta capçalera"></a></h2>
+<p>Has aconseguit fer l'anterior i encara en vols més? Vinga!</p>
+<p><img alt="exerciseiconOST" src="_images/exerciseiconOST.png" /> <a class="reference internal" href="exercici_17_03_nota_mes_alta_v3.html"><span class="doc"> Exercici 17_03. La nota més alta (més difícil)</span></a></p>
+<p><img alt="exerciseiconOST" src="_images/exerciseiconOST.png" /> <a class="reference internal" href="exercici_17_04_nota_mes_alta_v4.html"><span class="doc"> Exercici 17_04. La nota més alta (impossible?)</span></a></p>
+<p>Si vas saber resoldre el repte número 2, ja tindràs una bona idea de com
+resoldre aquests. Si et calen pistes, avisa.</p>
+</section>
 </section>
 
 
@@ -144,8 +183,8 @@
 </div>
 
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="arrays_justificacio.html" class="btn btn-neutral float-left" title="Necessitem les seqüències" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="moduls_exercicis_intro.html" class="btn btn-neutral float-right" title="Llista d&#39;exercicis del primer contacte amb mòduls" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="arrays.html" class="btn btn-neutral float-left" title="Arrays" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="moduls_exercicis.html" class="btn btn-neutral float-right" title="Llista d&#39;exercicis" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
