@@ -157,12 +157,17 @@ i mostri una versió transformada segons les següents regles:</p>
 <li><p>Les lletres no vocals apareixeran en majúscules</p></li>
 <li><p>Els nombres (atenció, no els dígits!) apareixeran entre parèntesis <code class="docutils literal notranslate"><span class="pre">()</span></code></p></li>
 <li><p>La resta de caràcters, excepte els blancs, desapareixen a la versió
-transformada</p></li>
+transformada.</p></li>
 </ul>
-<p>Considera la següent simulació</p>
+<p>Considera les següents simulacions:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Text?</span>
 <span class="hll"><span class="go">Avui faig 19 anys!</span>
 </span><span class="go">aVui FaiG (19) aNYS</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Text?</span>
+<span class="hll"><span class="go">Em queda 1/2 hora.</span>
+</span><span class="go">eM QueDa (12) HoRa</span>
 </pre></div>
 </div>
 <p>Per passar totes les proves, <code class="docutils literal notranslate"><span class="pre">TransformaText</span></code> haurà de definir la funció
