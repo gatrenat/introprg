@@ -163,6 +163,20 @@ la funció <code class="docutils literal notranslate"><span class="pre">esEnter(
 cadenes que <code class="docutils literal notranslate"><span class="pre">esEnter()</span></code> hagués considerat com a vàlides si ignorés espais
 en blanc a inici i final de la cadena.</p></li>
 </ul>
+<p>Considera la següent simulació:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">  Introdueix els texts a analitzar:</span>
+<span class="hll"><span class="go">  5</span>
+</span><span class="go">  &quot;5&quot; és enter</span>
+<span class="hll"><span class="go">  +5</span>
+</span><span class="go">  &quot;+5&quot; és enter</span>
+<span class="hll"><span class="go">     5</span>
+</span><span class="go">  &quot;   5 &quot; és enter</span>
+<span class="hll"><span class="go">  cinc</span>
+</span><span class="go">  &quot;cinc&quot; no és enter</span>
+<span class="hll">
+</span><span class="go">  Adéu</span>
+</pre></div>
+</div>
 <p>Considera les següents crides a <code class="docutils literal notranslate"><span class="pre">esEnter()</span></code>:</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">esEnter</span><span class="p">(</span><span class="s">&quot;123&quot;</span><span class="p">)</span>
 <span class="kc">true</span>
