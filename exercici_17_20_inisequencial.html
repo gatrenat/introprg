@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exercici 17_08. Enters entre comes (v4) &mdash; Introducció a la programació amb Java 2025-26 documentació</title>
+  <title>Exercici 17_20. Inicialització seqüencial &mdash; Introducció a la programació amb Java 2025-26 documentació</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=eafc0fe6" />
@@ -26,8 +26,8 @@
     <link rel="author" title="Quant a aquests documents" href="about.html" />
     <link rel="index" title="Índex" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
-    <link rel="next" title="Exercici 17_09. Arguments del main" href="exercici_17_09_arguments.html" />
-    <link rel="prev" title="Exercici 17_07. Enters entre comes (v3)" href="exercici_17_07_enters_entre_comes_v3.html" />
+    <link rel="next" title="Exercici 17_21. Formes entaulades" href="exercici_17_21_formestaula.html" />
+    <link rel="prev" title="Exercici 17_19. Taula d&#39;enters a String" href="exercici_17_19_int2str.html" />
      
     <script class="googleanalytics" src="_static/moiscripts.js"></script>
     <meta name="robots" content="noindex">
@@ -78,7 +78,7 @@
 <li class="toctree-l4"><a class="reference internal" href="exercici_17_05_enters_entre_comes_v1.html"> Exercici 17_05. Enters entre comes (v1)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="exercici_17_06_enters_entre_comes_v2.html"> Exercici 17_06. Enters entre comes (v2)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="exercici_17_07_enters_entre_comes_v3.html"> Exercici 17_07. Enters entre comes (v3)</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#"> Exercici 17_08. Enters entre comes (v4)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exercici_17_08_enters_entre_comes_v4.html"> Exercici 17_08. Enters entre comes (v4)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="exercici_17_09_arguments.html"> Exercici 17_09. Arguments del main</a></li>
 <li class="toctree-l4"><a class="reference internal" href="exercici_17_10_nomes_enters.html"> Exercici 17_10. Suma només enters</a></li>
 <li class="toctree-l4"><a class="reference internal" href="exercici_17_11_split.html"> Exercici 17_11. La utilitat <code class="docutils literal notranslate"><span class="pre">split</span></code></a></li>
@@ -90,7 +90,7 @@
 <li class="toctree-l4"><a class="reference internal" href="exercici_17_17_pilota_rebota.html"> Exercici 17_17. La pilota que rebota</a></li>
 <li class="toctree-l4"><a class="reference internal" href="exercici_17_18_digitart.html"> Exercici 17_18. Transformació de formes</a></li>
 <li class="toctree-l4"><a class="reference internal" href="exercici_17_19_int2str.html"> Exercici 17_19. Taula d'enters a String</a></li>
-<li class="toctree-l4"><a class="reference internal" href="exercici_17_20_inisequencial.html"> Exercici 17_20. Inicialització seqüencial</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#"> Exercici 17_20. Inicialització seqüencial</a></li>
 <li class="toctree-l4"><a class="reference internal" href="exercici_17_21_formestaula.html"> Exercici 17_21. Formes entaulades</a></li>
 <li class="toctree-l4"><a class="reference internal" href="exercici_17_22_formesplenes.html"> Exercici 17_22. Formes plenes</a></li>
 </ul>
@@ -119,12 +119,12 @@
           <li class="breadcrumb-item"><a href="moduls.html">Mòduls</a></li>
           <li class="breadcrumb-item"><a href="moduls_exercicis.html">Llista d'exercicis</a></li>
           <li class="breadcrumb-item"><a href="moduls_exercicis_arrays.html">Llista d'exercicis d'arrays</a></li>
-      <li class="breadcrumb-item active"> Exercici 17_08. Enters entre comes (v4)</li>
+      <li class="breadcrumb-item active"> Exercici 17_20. Inicialització seqüencial</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
-        <a href="exercici_17_07_enters_entre_comes_v3.html" class="btn btn-neutral float-left" title="Exercici 17_07. Enters entre comes (v3)" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="exercici_17_09_arguments.html" class="btn btn-neutral float-right" title="Exercici 17_09. Arguments del main" accesskey="n">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="exercici_17_19_int2str.html" class="btn btn-neutral float-left" title="Exercici 17_19. Taula d&#39;enters a String" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="exercici_17_21_formestaula.html" class="btn btn-neutral float-right" title="Exercici 17_21. Formes entaulades" accesskey="n">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
@@ -132,70 +132,61 @@
     
            <div itemprop="articleBody">
              
-  <section id="exerciseicon-t-exercici-17-08-enters-entre-comes-v4">
-<h1><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> Exercici 17_08. Enters entre comes (v4)<a class="headerlink" href="#exerciseicon-t-exercici-17-08-enters-entre-comes-v4" title="Enllaça amb aquesta capçalera"></a></h1>
+  <section id="exerciseicon-t-exercici-17-20-inicialitzacio-sequencial">
+<h1><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> Exercici 17_20. Inicialització seqüencial<a class="headerlink" href="#exerciseicon-t-exercici-17-20-inicialitzacio-sequencial" title="Enllaça amb aquesta capçalera"></a></h1>
 <p class="rubric">Context</p>
 <ul class="simple">
-<li><p>Carpeta de lliurament: <code class="docutils literal notranslate"><span class="pre">17_08_enters_entre_comes_v4/</span></code></p></li>
-<li><p>Continguts relacionats: <a class="reference internal" href="arrays_en_java.html"><span class="doc">Seqüències en Java</span></a></p></li>
+<li><p>Carpeta de lliurament: <code class="docutils literal notranslate"><span class="pre">17_20_inisequencial/</span></code></p></li>
+<li><p>Continguts relacionats: <a class="reference internal" href="arrays_mutabilitat.html"><span class="doc">Mutabilitat</span></a></p></li>
 <li><p>Com lliurar-lo: <a class="reference internal" href="com_lliurar.html#instruccions-git"><span class="std std-ref">instruccions</span></a></p></li>
 <li><p>[✓] Exercici amb <a class="reference internal" href="sobre_exercicis.html#descripcio-exercicis-autoavaluacio"><span class="std std-ref">autoavaluació</span></a></p></li>
 </ul>
 <p class="rubric">Enunciat</p>
-<p>Una nova versió del programa <a class="reference internal" href="exercici_17_07_enters_entre_comes_v3.html"><span class="doc">enters entre comes</span></a></p>
-<p>En aquesta ocasió, el programa tindrà les següents modificacions:</p>
-<ul>
-<li><p>El programa permetrà decidir quin és el caràcter de separació a mostrar
-entre els valors.</p>
-<p>Per fer-ho, demanarà aquest caràcter i agafarà el primer caràcter que li
-introdueixin ignorant la resta. En cas que la cadena introduïda sigui
-buida, considerarà la coma.</p>
-</li>
-<li><p>La separació dels valors numèrics, la realitzarà un mòdul
-amb la següent signatura:</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">entreComes</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="p">)</span>
-</pre></div>
+<p>L'exercici <a class="reference internal" href="exercici_17_19_int2str.html"><span class="doc">anterior</span></a> inicialitza la taula
+de manera molt senzilla.
+En aquesta ocasió farem unes petites modificacions perquè faci una mica
+més de patxoca.</p>
+<p>En comptes de <code class="docutils literal notranslate"><span class="pre">UtilTaula.inicialitzaTaula()</span></code>, farà servir el
+procediment <code class="docutils literal notranslate"><span class="pre">UtilTaula.inicialitzaSequencial(int[][]</span> <span class="pre">taula,</span> <span class="pre">int</span>
+<span class="pre">valorInicial)</span></code> que inicialitzarà les posicions de la taula que rep amb
+valors seqüencials a partir d'un donat.</p>
+<p>Aquesta nova versió de <code class="docutils literal notranslate"><span class="pre">TaulaEnterAString</span></code> mostrarà les taules de la
+mateixa manera que l'anterior. La diferència estarà en com les
+inicialitzarà. Per la primera especificació</p>
+<p>Considera la següent simulació:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>java<span class="w"> </span>TaulaEnterAString<span class="w"> </span>3x4
+<span class="hll">
+</span><span class="hll"><span class="go">3x4</span>
+</span><span class="hll"><span class="go">          1        2        3        4</span>
+</span><span class="hll"><span class="go">          5        6        7        8</span>
+</span><span class="hll"><span class="go">          9       10       11       12</span>
+</span></pre></div>
 </div>
-<p>El primer paràmetre correspon amb l'array d'enters mentre que el segon
-indica el caràcter de separació entre un valor i el següent.</p>
-<p>Malgrat el nostre programa no ho necessita, <code class="docutils literal notranslate"><span class="pre">entreComes()</span></code> serà capaç
-de funcionar correctament quan l'array estigui buit (és a dir, tingui
-longitud 0)</p>
-<p>Com aquest mòdul pot ser útil en futures ocasions i retorna un String,
-de moment el posarem a <code class="docutils literal notranslate"><span class="pre">UtilString</span></code></p>
-</li>
-<li><p>Ja no podem considerar que els valors que ens introdueixin els usuaris
-seran sempre adequats. Sort que tenim <code class="docutils literal notranslate"><span class="pre">UtilString.esEnter()</span></code> oi?</p></li>
-</ul>
-<p>Podem seguir considerant que els valors d'entrada seran enters.</p>
-<p>Considera les següents simulacions:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Quants?</span>
-<span class="hll"><span class="go">cinc</span>
-</span><span class="go">Per favor, un valor enter</span>
-<span class="hll"><span class="go">5</span>
-</span><span class="go">Separador?</span>
-<span class="hll"><span class="go">; i la resta la pots ignorar</span>
-</span><span class="go">Valor 1?</span>
-<span class="hll"><span class="go">1</span>
-</span><span class="go">Valor 2?</span>
-<span class="hll"><span class="go">dos</span>
-</span><span class="go">Per favor, un valor enter</span>
-<span class="hll"><span class="go">he dit 2</span>
-</span><span class="go">Per favor, un valor enter</span>
-<span class="hll"><span class="go">2</span>
-</span><span class="go">Valor 3?</span>
-<span class="hll"><span class="go">3</span>
-</span><span class="go">Valor 4?</span>
-<span class="hll"><span class="go">4</span>
-</span><span class="go">Valor 5?</span>
-<span class="go">5</span>
-<span class="go">1; 2; 3; 4; 5</span>
-</pre></div>
+<p>Quan hi ha més especificacions, les successives taules començaran pel
+números correlatius.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>java<span class="w"> </span>TaulaEnterAString<span class="w"> </span>3x4<span class="w"> </span>2x2<span class="w"> </span>123x4<span class="w"> </span>3x2
+<span class="hll">
+</span><span class="hll"><span class="go">3x4</span>
+</span><span class="hll"><span class="go">          1        2        3        4</span>
+</span><span class="hll"><span class="go">          5        6        7        8</span>
+</span><span class="hll"><span class="go">          9       10       11       12</span>
+</span><span class="hll">
+</span><span class="hll"><span class="go">2x2</span>
+</span><span class="hll"><span class="go">          2         3</span>
+</span><span class="hll"><span class="go">          4         5</span>
+</span><span class="hll">
+</span><span class="hll"><span class="go">123x4</span>
+</span><span class="hll"><span class="go">Especificació no vàlida</span>
+</span><span class="hll">
+</span><span class="hll"><span class="go">3x2</span>
+</span><span class="hll"><span class="go">          3        4</span>
+</span><span class="hll"><span class="go">          5        6</span>
+</span><span class="hll"><span class="go">          7        8</span>
+</span></pre></div>
 </div>
-<p><strong>Recomanacions</strong>:  T'has plantejat com seria d'útil disposar d'un mòdul
-que se n'encarregués de demanar per un enter fins que introdueixin un?
-També pot deixar molt net el teu codi si disposes d'un mòdul que se
-n'encarregui d'obtenir el caràcter de separació.</p>
+<p>Fixa't com, a aquesta execució, la primera taula comença per 1 la segona
+pel 2. Com que la tercera és una especificació errònia, la darrera taula
+comença per 3 en comptes de 4.</p>
 </section>
 
 
@@ -224,8 +215,8 @@ n'encarregui d'obtenir el caràcter de separació.</p>
 </div>
 
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="exercici_17_07_enters_entre_comes_v3.html" class="btn btn-neutral float-left" title="Exercici 17_07. Enters entre comes (v3)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="exercici_17_09_arguments.html" class="btn btn-neutral float-right" title="Exercici 17_09. Arguments del main" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="exercici_17_19_int2str.html" class="btn btn-neutral float-left" title="Exercici 17_19. Taula d&#39;enters a String" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="exercici_17_21_formestaula.html" class="btn btn-neutral float-right" title="Exercici 17_21. Formes entaulades" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
