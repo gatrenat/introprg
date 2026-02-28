@@ -254,15 +254,14 @@ tu. Molts d'aquests mòduls podrien ja estar disponibles a la biblioteca
 originals ja que el sistema d'avaluació no és tan hàbil i, en alguns casos
 podria pensar-se que es tracta d'un dels mòduls prohibits.</p>
 <p><code class="docutils literal notranslate"><span class="pre">Progressio</span></code> haurà d'incloure les següents constants:</p>
-<p>..code-block:: java</p>
-<blockquote>
-<div><p>public static final int NO_VALIDA = -1;
-public static final int NORMALETA = 0;
-public static final int CREIXENT = 1;
-public static final int DECREIXENT = 2;
-public static final int CREIXIDECRI = 3;
-public static final int DECRICREIXI = 4;</p>
-</div></blockquote>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">NO_VALIDA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">NORMALETA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">CREIXENT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">DECREIXENT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">CREIXIDECRI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">DECRICREIXI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+</pre></div>
+</div>
 <p><code class="docutils literal notranslate"><span class="pre">Progressio</span></code> també inclourà la definició dels següents mòduls:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">classifica(String</span> <span class="pre">paraula)</span></code>: retorna una de les sis constants
