@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Accés extern &mdash; Introducció a la programació amb Java 2025-26 documentació</title>
+  <title>Propietats públiques &mdash; Introducció a la programació amb Java 2025-26 documentació</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=eafc0fe6" />
@@ -26,8 +26,8 @@
     <link rel="author" title="Quant a aquests documents" href="about.html" />
     <link rel="index" title="Índex" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
-    <link rel="next" title="Propietats públiques" href="poo_intro_public.html" />
-    <link rel="prev" title="Múltiples instàncies" href="poo_intro_multiples_instancies.html" />
+    <link rel="next" title="Propietats protegides" href="poo_intro_private.html" />
+    <link rel="prev" title="Accés extern" href="poo_intro_extern.html" />
      
     <script class="googleanalytics" src="_static/moiscripts.js"></script>
     <meta name="robots" content="noindex">
@@ -67,8 +67,8 @@
 <li class="toctree-l3"><a class="reference internal" href="poo_intro_propietats.html">Propietats</a></li>
 <li class="toctree-l3"><a class="reference internal" href="poo_intro_propietats_mutables.html">Propietats mutables</a></li>
 <li class="toctree-l3"><a class="reference internal" href="poo_intro_multiples_instancies.html">Múltiples instàncies</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Accés extern</a></li>
-<li class="toctree-l3"><a class="reference internal" href="poo_intro_public.html">Propietats públiques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poo_intro_extern.html">Accés extern</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Propietats públiques</a></li>
 <li class="toctree-l3"><a class="reference internal" href="poo_intro_private.html">Propietats protegides</a></li>
 <li class="toctree-l3"><a class="reference internal" href="poo_intro_consultes.html">Preguntes a un objecte</a></li>
 <li class="toctree-l3"><a class="reference internal" href="poo_intro_accions.html">Accions d'un objecte</a></li>
@@ -96,12 +96,12 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="poo.html">Programació Orientada a Objectes</a></li>
           <li class="breadcrumb-item"><a href="poo_intro.html">Classes i objectes</a></li>
-      <li class="breadcrumb-item active">Accés extern</li>
+      <li class="breadcrumb-item active">Propietats públiques</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
-        <a href="poo_intro_multiples_instancies.html" class="btn btn-neutral float-left" title="Múltiples instàncies" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="poo_intro_public.html" class="btn btn-neutral float-right" title="Propietats públiques" accesskey="n">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="poo_intro_extern.html" class="btn btn-neutral float-left" title="Accés extern" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="poo_intro_private.html" class="btn btn-neutral float-right" title="Propietats protegides" accesskey="n">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
@@ -109,27 +109,26 @@
     
            <div itemprop="articleBody">
              
-  <section id="acces-extern">
-<h1>Accés extern<a class="headerlink" href="#acces-extern" title="Enllaça amb aquesta capçalera"></a></h1>
-<p>Fins ara, la definició de <code class="docutils literal notranslate"><span class="pre">GatRenat</span></code> ha estat sempre acompanyada d'un
-<code class="docutils literal notranslate"><span class="pre">main()</span></code> dins del mateix fitxer. Es podria accedir des d'un altre
-programa?</p>
-<p>Fixa't en el següent diagrama de classes:</p>
+  <section id="propietats-publiques">
+<h1>Propietats públiques<a class="headerlink" href="#propietats-publiques" title="Enllaça amb aquesta capçalera"></a></h1>
+<p>Tornem a revisar el codi amb les classes <code class="docutils literal notranslate"><span class="pre">GatRenat</span></code> i <code class="docutils literal notranslate"><span class="pre">UsaGatRenat</span></code>. Aquest
+cop, afegirem un petit canvi:</p>
+<p>A veure si detectes què ha canviat al següent diagrama UML respecte la versió
+<a class="reference internal" href="poo_intro_extern.html"><span class="doc">anterior</span></a>:</p>
 <figure class="align-center">
 <p class="plantuml">
-<img src="_images/plantuml-f1d27e3af816849e35a9920cbf67a4996c56750a.png" alt=" &#64;startuml
+<img src="_images/plantuml-72a8fa96595870faa6b693611e5750581b083e7e.png" alt=" &#64;startuml
  hide circle
  skinparam monochrome true
  skinparam classAttributeIconSize 0
 
 
  class GatRenat {
-     vides: int
-     {static} main(String[])
+     + vides: int
  }
 
  class UsaGatRenat {
-     {static} main(String[])
+     + {static} main(String[])
  }
 
  UsaGatRenat -left-&gt; GatRenat
@@ -137,55 +136,40 @@ programa?</p>
  &#64;enduml"/>
 </p>
 </figure>
-<p>Hi apareixen dues classes, la nostra coneguda <code class="docutils literal notranslate"><span class="pre">GatRenat</span></code> i la nova
-<code class="docutils literal notranslate"><span class="pre">UsaGatRenat</span></code>.</p>
-<p>Si traduïm aquesta classe a codi, obtindrem:</p>
+<p>Si has mirat amb atenció, hauràs vist que han aparegut dos signes <code class="docutils literal notranslate"><span class="pre">+</span></code>
+acompanyant <code class="docutils literal notranslate"><span class="pre">vides</span></code> i <code class="docutils literal notranslate"><span class="pre">main()</span></code>.</p>
+<p>Fixa't ara com es tradueix el diagrama anterior a codi. Comencem per
+<code class="docutils literal notranslate"><span class="pre">GatRenat</span></code>.</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">GatRenat</span><span class="w"> </span><span class="p">{</span>
-<span class="linenos">2</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">vides</span><span class="p">;</span>
-<span class="linenos">3</span><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="linenos">4</span><span class="w">        </span><span class="n">GatRenat</span><span class="w"> </span><span class="n">renat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">GatRenat</span><span class="p">();</span>
-<span class="linenos">5</span><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Al gat Renat li queden &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">renat</span><span class="p">.</span><span class="na">vides</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; vides&quot;</span><span class="p">);</span>
-<span class="linenos">6</span><span class="w">    </span><span class="p">}</span>
-<span class="linenos">7</span><span class="p">}</span>
+<span class="linenos">2</span><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">vides</span><span class="p">;</span>
+<span class="linenos">3</span><span class="p">}</span>
 </pre></div>
 </div>
-<p>En aquests moments no fa una gran diferència entre posar <code class="docutils literal notranslate"><span class="pre">public</span></code> i no
-posar-ho. Amb tot, de seguida veurem que és un bon moment explicitar-ho.</p>
-<p>Considera ara el següent codi corresponent a l'altra classe:</p>
+<p>I respecte a <code class="docutils literal notranslate"><span class="pre">UsaGatRenat</span></code>:</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">UsaGatRenat</span><span class="w"> </span><span class="p">{</span>
 <span class="linenos">2</span><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="linenos">3</span><span class="w">        </span><span class="n">GatRenat</span><span class="w"> </span><span class="n">renat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">GatRenat</span><span class="p">();</span>
-<span class="linenos">4</span><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Al gat Renat li queden &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">renat</span><span class="p">.</span><span class="na">vides</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; vides també des de UsaGatRenat&quot;</span><span class="p">);</span>
+<span class="linenos">4</span><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Al gat Renat li queden &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">renat</span><span class="p">.</span><span class="na">vides</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; vides&quot;</span><span class="p">);</span>
 <span class="linenos">5</span><span class="w">    </span><span class="p">}</span>
 <span class="linenos">6</span><span class="p">}</span>
 </pre></div>
 </div>
-<p>Copia el codi en un fitxer al mateix directori que el de l'exercici
-anterior i executa'l.</p>
-<p>Respon a les següents preguntes:</p>
-<ol class="arabic simple">
-<li><p>Quin és el nom del fitxer on està definit el punt d'entrada <code class="docutils literal notranslate"><span class="pre">main()</span></code> d'aquest programa?</p></li>
-<li><p>Ara tenim dos fitxers amb <code class="docutils literal notranslate"><span class="pre">main()</span></code>. Com pot saber Java quin és el
-<code class="docutils literal notranslate"><span class="pre">main()</span></code> a executar?</p></li>
-<li><p>A quin fitxer està definida la classe del gat Renat?</p></li>
-<li><p>Quants programes es podrien construir fent ús de la definició del gat Renat?</p></li>
-<li><p>Elimina el <code class="docutils literal notranslate"><span class="pre">main()</span></code> de <code class="docutils literal notranslate"><span class="pre">GatRenat</span></code>. Continua funcionant <code class="docutils literal notranslate"><span class="pre">UsaGatRenat</span></code>?
-Què ha deixat de poder-se executar?</p></li>
-<li><p>Què passaria si el fitxer amb el codi anterior i el que conté la
-definició de la classe del Renat estiguessin en directoris
-diferents?</p></li>
-</ol>
-<section id="una-mica-de-culturilla-poo">
-<h2>Una mica de <em>culturilla</em> POO<a class="headerlink" href="#una-mica-de-culturilla-poo" title="Enllaça amb aquesta capçalera"></a></h2>
-<p>Tot i que <code class="docutils literal notranslate"><span class="pre">vides</span></code> és una variable, en el món de la POO aquest tipus de
-<em>bestioles</em> se les coneix com <em>propietats</em> o <em>camps</em>.</p>
-<p>Una classe pot definir tantes propietats com li calguin.</p>
-<p>Als valors que tenen les propietats d'una instància en un determinat
-moment se li anomena <em>estat</em> de la instància.</p>
-<p><img alt="exerciseicon___" src="_images/exerciseicon___.png" /> <a class="reference internal" href="exercici_30_07_extern.html"><span class="doc"> Exercici 30_07. Anotacions sobre accés des de fora</span></a></p>
-<p><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> <a class="reference internal" href="exercici_30_08_extern.html"><span class="doc"> Exercici 30_08. L'Ascensor des de fora</span></a></p>
-<p><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> <a class="reference internal" href="exercici_30_09_posicio.html"><span class="doc"> Exercici 30_09. Renat té posició</span></a></p>
-</section>
+<p>A la classe <code class="docutils literal notranslate"><span class="pre">GatRenat</span></code> veiem que la declaració de l'atribut <code class="docutils literal notranslate"><span class="pre">vides</span></code> ara ve
+precedida per <code class="docutils literal notranslate"><span class="pre">public</span></code>, que correspon al <code class="docutils literal notranslate"><span class="pre">+</span></code> que apareix al diagrama.</p>
+<p><code class="docutils literal notranslate"><span class="pre">public</span></code> és una marca de visiblitat que indica que la propietat <code class="docutils literal notranslate"><span class="pre">vides</span></code> pot
+ser accedida des de fora de la classe on està definida. Així, <code class="docutils literal notranslate"><span class="pre">UsaGatRenat</span></code>
+pot accedir sense problemes a aquesta propietat a partir de la variable
+<code class="docutils literal notranslate"><span class="pre">renat</span></code>.</p>
+<p>Potser estaràs pensant que això ja ho podies fer sense <code class="docutils literal notranslate"><span class="pre">public</span></code>, i tindràs
+raó. La diferència entre posar <code class="docutils literal notranslate"><span class="pre">public</span></code> o no en aquest moment del curs és
+pràcticament nula. Apareix aquí perquè aviat la canviarem per una visiblitat.
+Paciència.</p>
+<p>Si tens molta capacitat d'observació també te n'hauràs adonat que el diagrama
+de classes presenta el <code class="docutils literal notranslate"><span class="pre">+</span></code> també al <code class="docutils literal notranslate"><span class="pre">main()</span></code> de la classe <code class="docutils literal notranslate"><span class="pre">UsaGatRenat</span></code> i
+que aquest mòdul apareix com a públic. El punt és que abans també ho feia però
+el UML no incloia el <code class="docutils literal notranslate"><span class="pre">+</span></code>. Recorda que en el món UML si no s'indica res no vol
+dir que no hi sigui. Aquest és un altre exemple.</p>
+<p><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> <a class="reference internal" href="exercici_30_10_moviment.html"><span class="doc"> Exercici 30_10. L'ascensor té moviment</span></a></p>
 </section>
 
 
@@ -214,8 +198,8 @@ moment se li anomena <em>estat</em> de la instància.</p>
 </div>
 
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="poo_intro_multiples_instancies.html" class="btn btn-neutral float-left" title="Múltiples instàncies" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="poo_intro_public.html" class="btn btn-neutral float-right" title="Propietats públiques" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="poo_intro_extern.html" class="btn btn-neutral float-left" title="Accés extern" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="poo_intro_private.html" class="btn btn-neutral float-right" title="Propietats protegides" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

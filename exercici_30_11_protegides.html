@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exercici 30_03. Anotacions sobre mutabilitat de les propietats &mdash; Introducció a la programació amb Java 2025-26 documentació</title>
+  <title>Exercici 30_11. Anotacions sobre accés des de fora &mdash; Introducció a la programació amb Java 2025-26 documentació</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=eafc0fe6" />
@@ -26,8 +26,8 @@
     <link rel="author" title="Quant a aquests documents" href="about.html" />
     <link rel="index" title="Índex" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
-    <link rel="next" title="Exercici 30_04. L&#39;ascensor puja un pis" href="exercici_30_04_puja.html" />
-    <link rel="prev" title="Exercici 30_02. L&#39;ascensor està al primer pis" href="exercici_30_02_ascensor.html" />
+    <link rel="next" title="Exercici 30_12. Posició sempre correcta" href="exercici_30_12_posicio_correcta.html" />
+    <link rel="prev" title="Exercici 30_10. L&#39;ascensor té moviment" href="exercici_30_10_moviment.html" />
      
     <script class="googleanalytics" src="_static/moiscripts.js"></script>
     <meta name="robots" content="noindex">
@@ -67,7 +67,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="poo_exercicis.html">Exercicis</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="exercici_30_01_propietats.html"> Exercici 30_01. Anotacions sobre les propietats</a></li>
 <li class="toctree-l3"><a class="reference internal" href="exercici_30_02_ascensor.html"> Exercici 30_02. L'ascensor està al primer pis</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#"> Exercici 30_03. Anotacions sobre mutabilitat de les propietats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercici_30_03_mutabilitat.html"> Exercici 30_03. Anotacions sobre mutabilitat de les propietats</a></li>
 <li class="toctree-l3"><a class="reference internal" href="exercici_30_04_puja.html"> Exercici 30_04. L'ascensor puja un pis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="exercici_30_05_multiples.html"> Exercici 30_05. Anotacions sobre multiples instàncies</a></li>
 <li class="toctree-l3"><a class="reference internal" href="exercici_30_06_ascensors.html"> Exercici 30_06. Molts ascensors</a></li>
@@ -75,7 +75,7 @@
 <li class="toctree-l3"><a class="reference internal" href="exercici_30_08_extern.html"> Exercici 30_08. L'Ascensor des de fora</a></li>
 <li class="toctree-l3"><a class="reference internal" href="exercici_30_09_posicio.html"> Exercici 30_09. Renat té posició</a></li>
 <li class="toctree-l3"><a class="reference internal" href="exercici_30_10_moviment.html"> Exercici 30_10. L'ascensor té moviment</a></li>
-<li class="toctree-l3"><a class="reference internal" href="exercici_30_11_protegides.html"> Exercici 30_11. Anotacions sobre accés des de fora</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"> Exercici 30_11. Anotacions sobre accés des de fora</a></li>
 <li class="toctree-l3"><a class="reference internal" href="exercici_30_12_posicio_correcta.html"> Exercici 30_12. Posició sempre correcta</a></li>
 <li class="toctree-l3"><a class="reference internal" href="exercici_30_13_ascensor_protegit.html"> Exercici 30_13. Ascensor protegit</a></li>
 <li class="toctree-l3"><a class="reference internal" href="exercici_30_14_com_esta.html"> Exercici 30_14. Com està Renat?</a></li>
@@ -107,12 +107,12 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="poo.html">Programació Orientada a Objectes</a></li>
           <li class="breadcrumb-item"><a href="poo_exercicis.html">Exercicis</a></li>
-      <li class="breadcrumb-item active"> Exercici 30_03. Anotacions sobre mutabilitat de les propietats</li>
+      <li class="breadcrumb-item active"> Exercici 30_11. Anotacions sobre accés des de fora</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
-        <a href="exercici_30_02_ascensor.html" class="btn btn-neutral float-left" title="Exercici 30_02. L&#39;ascensor està al primer pis" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="exercici_30_04_puja.html" class="btn btn-neutral float-right" title="Exercici 30_04. L&#39;ascensor puja un pis" accesskey="n">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="exercici_30_10_moviment.html" class="btn btn-neutral float-left" title="Exercici 30_10. L&#39;ascensor té moviment" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="exercici_30_12_posicio_correcta.html" class="btn btn-neutral float-right" title="Exercici 30_12. Posició sempre correcta" accesskey="n">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
@@ -120,21 +120,21 @@
     
            <div itemprop="articleBody">
              
-  <section id="exerciseicon-exercici-30-03-anotacions-sobre-mutabilitat-de-les-propietats">
-<h1><img alt="exerciseicon___" src="_images/exerciseicon___.png" /> Exercici 30_03. Anotacions sobre mutabilitat de les propietats<a class="headerlink" href="#exerciseicon-exercici-30-03-anotacions-sobre-mutabilitat-de-les-propietats" title="Enllaça amb aquesta capçalera"></a></h1>
+  <section id="exerciseicon-exercici-30-11-anotacions-sobre-acces-des-de-fora">
+<h1><img alt="exerciseicon___" src="_images/exerciseicon___.png" /> Exercici 30_11. Anotacions sobre accés des de fora<a class="headerlink" href="#exerciseicon-exercici-30-11-anotacions-sobre-acces-des-de-fora" title="Enllaça amb aquesta capçalera"></a></h1>
 <p class="rubric">Context</p>
 <ul class="simple">
-<li><p>Carpeta de lliurament: <code class="docutils literal notranslate"><span class="pre">30_03_mutabilitat/</span></code></p></li>
-<li><p>Continguts relacionats: <a class="reference internal" href="poo_intro_propietats_mutables.html"><span class="doc">Propietats mutables</span></a></p></li>
+<li><p>Carpeta de lliurament: <code class="docutils literal notranslate"><span class="pre">30_11_protegides/</span></code></p></li>
+<li><p>Continguts relacionats: <a class="reference internal" href="poo_intro_private.html"><span class="doc">Propietats protegides</span></a></p></li>
 <li><p>Com lliurar-lo: <a class="reference internal" href="com_lliurar.html#instruccions-git"><span class="std std-ref">instruccions</span></a></p></li>
 </ul>
 <p class="rubric">Enunciat</p>
-<p>Descarregat <a class="reference download internal" download="" href="_downloads/e6b3bf9f67a2d0a472efdda1ba484bf6/poo_mutabilitat.rst"><code class="xref download docutils literal notranslate"><span class="pre">aquesta</span> <span class="pre">plantilla</span></code></a> i
+<p>Descarregat <a class="reference download internal" download="" href="_downloads/b6f96a2fcfcbc88a7934bceacc53f08d/poo_protegides.rst"><code class="xref download docutils literal notranslate"><span class="pre">aquesta</span> <span class="pre">plantilla</span></code></a> i
 completa-la, tot reemplaçant els <code class="docutils literal notranslate"><span class="pre">XXX</span></code> per les anotacions que has pres a
 classe.</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">####################################</span>
-<span class="gh">Anotacions sobre propietats mutables</span>
-<span class="gh">####################################</span>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">##########################################</span>
+<span class="gh">Anotacions sobre les propietats protegides</span>
+<span class="gh">##########################################</span>
 
 <span class="m">*</span> Autor/a: XXX
 
@@ -143,47 +143,179 @@ classe.</p>
 <span class="gh">Introducció</span>
 <span class="gh">===========</span>
 
-En aquest exercici incloc les meves anotacions sobre el tema de <span class="ge">*propietats mutables*</span>
-dins de la <span class="ge">*programació orientada a objectes*</span>.
+En aquest exercici incloc les meves anotacions sobre el tema de
+<span class="ge">*propietats protegides*</span> dins de la <span class="ge">*programació orientada a objectes*</span>.
 
-Les anotacions responen a diferents preguntes sobre aquest codi:
+Considerarem la nova versió de <span class="s">``GatRenat``</span>::
+
 
 <span class="se">::</span>
 
-<span class="s">    01    public class GatRenat {</span>
-<span class="s">    02        int vides = 7;                // vides disponibles del gat Renat</span>
-<span class="s">    03        public static void main(String[] args) {</span>
-<span class="s">    04            GatRenat renat;           // declarem l&#39;objecte (la referència) al gat</span>
-<span class="s">    05            renat = new GatRenat();   // creem la instància del gat Renat.</span>
-<span class="s">    06            System.out.println(&quot;Abans el gat Renat tenia &quot; + renat.vides + &quot; vides&quot;);</span>
-<span class="s">    07            renat.vides = renat.vides - 1;  // Renat ha tingut un accident</span>
-<span class="s">    08            System.out.println(&quot;Ara el gat Renat té &quot; + renat.vides);</span>
-<span class="s">    09        }</span>
-<span class="s">    10    }</span>
+<span class="s">    01   public class GatRenat {</span>
+<span class="s">    02       private int vides = 7;</span>
+<span class="s">    03       public int getVides() {  //  retorna el nombre de vides</span>
+<span class="s">    04           return vides;</span>
+<span class="s">    05       }</span>
+<span class="s">    06       public void setVides(int novesVides) {   // modifica el nombre de vides si ens donen un de vàlid</span>
+<span class="s">    07           if (novesVides &gt;= 0) {</span>
+<span class="s">    08               vides = novesVides;</span>
+<span class="s">    09           }</span>
+<span class="s">    10       }</span>
+<span class="s">    11   }</span>
 
-<span class="gh">Pregunta 1. Obtenir</span>
-<span class="gh">===================</span>
 
-Per consultar (llegir, obtenir) el valor d&#39;una propietat de la instància,
-cal XXX
+<span class="gh">Pregunta 1. L&#39;accés de sempre</span>
+<span class="gh">=============================</span>
 
-<span class="gh">Pregunta 2. Assignar</span>
-<span class="gh">====================</span>
+Si <span class="s">``UsaGatRenat``</span> fos:
 
-Per canviar (escriure, assignar) el valor d&#39;una propietat de la instància,
-cal XXX
+<span class="se">::</span>
 
-<span class="gh">Pregunta 3. Valors absurds</span>
+<span class="s">       public class UsaGatRenat {</span>
+<span class="s">           public static void main(String[] args) {</span>
+<span class="s">               GatRenat renat = new GatRenat();</span>
+<span class="s">               System.out.println(&quot;El gat Renat té &quot; + renat.vides + &quot; vides&quot;);</span>
+<span class="s">           }</span>
+<span class="s">       }</span>
+
+Ens trobem que XXX
+
+Penso que passa perquè XXX
+
+<span class="gh">Pregunta 2. Un nou accés</span>
+<span class="gh">========================</span>
+
+En modificar el codi de <span class="s">``UsaGatRenat``</span> com:
+
+<span class="se">::</span>
+
+<span class="s">     public class UsaGatRenat {</span>
+<span class="s">         public static void main(String[] args) {</span>
+<span class="s">             GatRenat renat = new GatRenat();</span>
+<span class="s">             System.out.println(&quot;El gat Renat té &quot; + renat.getVides() + &quot; vides&quot;);</span>
+<span class="s">         }</span>
+<span class="s">     }</span>
+
+La diferència respecte a la versió de la pregunta anterior és XXX.
+
+El resultat ara és XXX
+
+Penso que passa això perquè XXX
+
+<span class="gh">Pregunta 3. Canviant valor</span>
 <span class="gh">==========================</span>
 
-A la pregunta següent:
+Per què des del <span class="s">``main()``</span> de <span class="s">``UsaGatRenat``</span> poguem dir que <span class="s">``renat``</span> té
+5 vides, cal fer XXX.
 
-    És possible indicar que el gat Renat té -12 vides? Com? És quelcom
-    desitjable que pugui passar? En cas que es pugui, com ho podries
-    evitar fent servir els coneixements de programació estructurada i
-    modular que hem treballat fins ara?
+El codi de <span class="s">``UsaGatRenat``</span> seria:
 
-La meva resposta és: XXX
+<span class="se">::</span>
+
+<span class="s">    XXX</span>
+
+La sortida en executar-lo seria:
+
+:: 
+
+    $ java UsaGatRenat
+    XXX
+
+
+La meva explicació de perquè això és així és XXX
+
+
+<span class="gh">Pregunta 4. Un valor absurd</span>
+<span class="gh">===========================</span>
+
+En intentar assignar de la manera anterior -12 en comptes de 5 vides, ens
+trobem que XXX
+
+El codi seria:
+
+<span class="se">::</span>
+
+<span class="s">    XXX</span>
+
+
+La sortida en executar-lo seria:
+
+:: 
+
+    $ java UsaGatRenat
+    XXX
+
+
+La meva explicació de perquè això és així és XXX
+
+
+<span class="gh">Pregunta 5. I des de ``GatRenat``?</span>
+<span class="gh">==================================</span>
+
+He experimentat com es comporta <span class="s">``private``</span> des del <span class="s">``main()``</span> del propi
+<span class="s">``GatRenat``</span>. En concret, he provat:
+
+<span class="se">::</span>
+
+<span class="s">   public class GatRenat {</span>
+<span class="s">       private int vides = 7;</span>
+<span class="s">       public int getVides() {  //  retorna el nombre de vides</span>
+<span class="s">           return vides;</span>
+<span class="s">       }</span>
+<span class="s">       public void setVides(int novesVides) {   // modifica el nombre de vides si ens donen un de vàlid</span>
+<span class="s">           if (novesVides &gt;= 0) {</span>
+<span class="s">               vides = novesVides;</span>
+<span class="s">           }</span>
+<span class="s">       }</span>
+<span class="s">       public static void main(String[] args) {</span>
+<span class="s">           GatRenat renat = new GatRenat();</span>
+<span class="s">           renat.vides = -12;</span>
+<span class="s">           System.out.println(&quot;El gat Renat té &quot; + renat.vides + &quot; vides&quot;);</span>
+<span class="s">       }</span>
+<span class="s">   }</span>
+
+En intentar compilar i executar aquesta versió em trobo què XXX
+
+Comparant-lo amb el que passava a la pregunta 1, veiem que XXX.
+
+La meva explicació és XXX
+
+<span class="gh">Pregunta 6. Valors absurds novament</span>
+<span class="gh">===================================</span>
+
+Un cop hem vist el funcionament d&#39;aquesta versió de <span class="s">``GatRenat``</span>, ens
+podem fer la següent pregunta:
+
+    És possible posar un valor absurd a les vides d&#39;una instància de
+    GatRenat sense modificar el programa <span class="s">``GatRenat.java``</span>?
+
+La meva resposta és XXX perquè XXX.
+
+<span class="gh">Pregunta 7. públic i privat</span>
+<span class="gh">===========================</span>
+
+La meva idea del paper que juguen les paraules <span class="s">``public``</span> i <span class="s">``private``</span> a
+les propietats d&#39;una classe és XXX
+
+<span class="gh">Pregunta 8. Només *getter*</span>
+<span class="gh">==========================</span>
+
+Aquesta implementació de <span class="s">``GatRenat``</span> disposa de <span class="ge">*getter*</span> i de <span class="ge">*setter*</span>.
+Aquests venen definits pels mòduls XXX i XXX.
+
+En cas que <span class="s">``GatRenat``</span> només disposés de <span class="ge">*getter*</span>, el resultat seria XXX.
+
+En canvi, si només en tingués <span class="ge">*setter*</span> el que passaria és XXX.
+
+Finalment, si no en tingués cap dels dos, ens trobaríem que XXX.
+
+
+<span class="gh">Pregunta 9. Diferències amb els mòduls ja coneguts</span>
+<span class="gh">==================================================</span>
+
+Els mòduls <span class="s">``getVides()``</span> i <span class="s">``setVides()``</span> tenen una definició
+lleugerament diferent als mòduls que hem declarat abans del tema de POO.
+En concret XXX
 </pre></div>
 </div>
 </section>
@@ -214,8 +346,8 @@ La meva resposta és: XXX
 </div>
 
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="exercici_30_02_ascensor.html" class="btn btn-neutral float-left" title="Exercici 30_02. L&#39;ascensor està al primer pis" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="exercici_30_04_puja.html" class="btn btn-neutral float-right" title="Exercici 30_04. L&#39;ascensor puja un pis" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="exercici_30_10_moviment.html" class="btn btn-neutral float-left" title="Exercici 30_10. L&#39;ascensor té moviment" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="exercici_30_12_posicio_correcta.html" class="btn btn-neutral float-right" title="Exercici 30_12. Posició sempre correcta" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
