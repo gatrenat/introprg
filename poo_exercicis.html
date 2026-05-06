@@ -5,7 +5,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Exercicis &mdash; Introducció a la programació amb Java 2025-26 documentació</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=eafc0fe6" />
       <link rel="stylesheet" type="text/css" href="_static/moistyle.css?v=0e2f4d36" />
@@ -27,7 +27,7 @@
     <link rel="index" title="Índex" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
     <link rel="next" title="Exercici 30_01. Anotacions sobre les propietats" href="exercici_30_01_propietats.html" />
-    <link rel="prev" title="Interfaces" href="poo_interfaces.html" />
+    <link rel="prev" title="Excepcions" href="excepcions_2526.html" />
      
     <script class="googleanalytics" src="_static/moiscripts.js"></script>
     <meta name="robots" content="noindex">
@@ -68,6 +68,7 @@
 <li class="toctree-l2"><a class="reference internal" href="poo_static.html">Membres d'instància i de classe</a></li>
 <li class="toctree-l2"><a class="reference internal" href="poo_composicio.html">Composició</a></li>
 <li class="toctree-l2"><a class="reference internal" href="poo_herencia.html">Herència</a></li>
+<li class="toctree-l2"><a class="reference internal" href="excepcions_2526.html">Excepcions</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Exercicis</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="exercici_30_01_propietats.html"> Exercici 30_01. Anotacions sobre les propietats</a></li>
 <li class="toctree-l3"><a class="reference internal" href="exercici_30_02_ascensor.html"> Exercici 30_02. L'ascensor està al primer pis</a></li>
@@ -103,6 +104,9 @@
 <li class="toctree-l3"><a class="reference internal" href="exercici_30_32_metodes_cridats.html"> Exercici 30_32. Els mètodes que realment es criden</a></li>
 <li class="toctree-l3"><a class="reference internal" href="exercici_30_33_garfield.html"> Exercici 30_33. El gat Garfield</a></li>
 <li class="toctree-l3"><a class="reference internal" href="exercici_30_34_interfagat.html"> Exercici 30_34. Gat Renat amb Interfaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercici_31_06_hores_controlades.html"> Exercici 31_06. La classe <code class="docutils literal notranslate"><span class="pre">Hora</span></code> amb control d'errors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercici_31_07_hores_excepcionals.html"> Exercici 31_07. La classe Hora amb excepcions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercici_31_08_hores_ilegals.html"> Exercici 31_08. La classe Hora amb <code class="docutils literal notranslate"><span class="pre">IllegalArgumentException</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -129,7 +133,7 @@
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
-        <a href="poo_interfaces.html" class="btn btn-neutral float-left" title="Interfaces" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="excepcions_2526.html" class="btn btn-neutral float-left" title="Excepcions" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
         <a href="exercici_30_01_propietats.html" class="btn btn-neutral float-right" title="Exercici 30_01. Anotacions sobre les propietats" accesskey="n">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
@@ -177,6 +181,9 @@
 <li class="toctree-l1"><a class="reference internal" href="exercici_30_32_metodes_cridats.html"> Exercici 30_32. Els mètodes que realment es criden</a></li>
 <li class="toctree-l1"><a class="reference internal" href="exercici_30_33_garfield.html"> Exercici 30_33. El gat Garfield</a></li>
 <li class="toctree-l1"><a class="reference internal" href="exercici_30_34_interfagat.html"> Exercici 30_34. Gat Renat amb Interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercici_31_06_hores_controlades.html"> Exercici 31_06. La classe <code class="docutils literal notranslate"><span class="pre">Hora</span></code> amb control d'errors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercici_31_07_hores_excepcionals.html"> Exercici 31_07. La classe Hora amb excepcions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercici_31_08_hores_ilegals.html"> Exercici 31_08. La classe Hora amb <code class="docutils literal notranslate"><span class="pre">IllegalArgumentException</span></code></a></li>
 </ul>
 </div>
 </section>
@@ -207,7 +214,7 @@
 </div>
 
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="poo_interfaces.html" class="btn btn-neutral float-left" title="Interfaces" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="excepcions_2526.html" class="btn btn-neutral float-left" title="Excepcions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
         <a href="exercici_30_01_propietats.html" class="btn btn-neutral float-right" title="Exercici 30_01. Anotacions sobre les propietats" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
