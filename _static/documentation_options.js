@@ -1,11 +1,11 @@
 const DOCUMENTATION_OPTIONS = {
-    VERSION: '2025-26',
+    VERSION: '2024-25',
     LANGUAGE: 'ca',
     COLLAPSE_INDEX: false,
     BUILDER: 'html',
     FILE_SUFFIX: '.html',
     LINK_SUFFIX: '.html',
-    HAS_SOURCE: false,
+    HAS_SOURCE: true,
     SOURCELINK_SUFFIX: '.txt',
     NAVIGATION_WITH_KEYS: false,
     SHOW_SEARCH_SUMMARY: true,
